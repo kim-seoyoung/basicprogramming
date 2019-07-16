@@ -4,8 +4,7 @@
 # In[1]:
 
 
-print('hello')
-print('hi)
+print('hi')
 
 
 # In[ ]:
