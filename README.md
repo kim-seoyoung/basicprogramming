@@ -1,4 +1,4 @@
-# basicprogramming
+# Basic programming
 
 **cpp** - algorithm problem solved by c++
 
