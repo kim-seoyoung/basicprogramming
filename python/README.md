@@ -1,3 +1,3 @@
-* **boj** - problem form baekjoon online judge
+* **boj** - problems from baekjoon online judge
 
-* **swe** - problem form samsung software academy
+* **swe** - problems from samsung software academy
