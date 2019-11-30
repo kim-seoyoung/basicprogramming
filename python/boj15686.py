@@ -17,7 +17,6 @@ def outchicken(m,ck,s):
     global _min
     if m == M:
         dis = distSum()
-        print(visited)
         if _min > dis:
             _min = dis
         return
@@ -43,7 +42,6 @@ for i in range(N):
             house.append((i,j))
 
 _min = 10000000
-print(chicken)
 outchicken(len(chicken), chicken,0)
 
 print(_min)
