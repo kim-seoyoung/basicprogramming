@@ -5,8 +5,6 @@ using namespace std;
 int N, M;
 int maze[1001][1001];
 int candy[1001][1001];
-int dx[]={1,0,1};
-int dy[]={0,1,1};
 
 void dp(){
     for(int i(0);i < N; i++){
