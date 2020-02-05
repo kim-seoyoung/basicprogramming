@@ -22,6 +22,7 @@ bool play(){
 }
 
 void rigging(int c, int nn, int hh){
+    if(c > cnt) return;
     if(play()){
         cnt = min(cnt,c);
         return;
@@ -30,6 +31,8 @@ void rigging(int c, int nn, int hh){
     for(int n(nn); n<N; n++){
         int k; (n==nn) ? k=hh:k=1;
         for(int h(k); h <= H; h++){
+            if(n >1 && ladder[n-1][h]) continue;
+            if(n < N-1 && ladder[n+1][h]) continue;
             if(!ladder[n][h]){
                 ladder[n][h] = true;
                 rigging(c+1, n, h);
@@ -48,12 +51,10 @@ int main(){
         ladder[b][a] = true;
     }
 
-    if(play()) cout << 0;
-    else {
-        rigging(0,1,1);
-        if(cnt < 4) cout << cnt; 
-        else cout << -1; 
-    }
+    rigging(0,1,1);
+    if(cnt < 4) cout << cnt; 
+    else cout << -1; 
+
     fclose(stdin);
     return 0;
 }
