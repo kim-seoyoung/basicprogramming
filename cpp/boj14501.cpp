@@ -8,7 +8,6 @@ void max_profit(int d, int lm){
     for(int i(d); i < N; i++){
         int dd=i+schedule[2*i];
         if(dd < N){
-            // cout << d << " " << lm+schedule[2*i+1] << " \n";
             max_profit(dd,lm+schedule[2*i+1]);
         }
         if(dd == N) _max = max(_max,lm+schedule[2*i+1]);
